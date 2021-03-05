@@ -2,54 +2,24 @@
 
 let destinations = ["Albuquerque", "Taos", "Jemez", "Roswell"];
 
-let Albuquerque = destinations [0];
-let Taos = destinations [1];
-let Jemez = destinations [2]
-let Roswell = destinations [3];
+let restaurantsAlbuquerque = ["Range", "Savoy", "Gardunos"];
+let restaurantsTaos = ["Gutiz", "Moderna", "Geronimos"];
+let restaurantsJemez = ["Daves", "Sisters", "hotSpringsCafe"];
+let restaurantsRoswell = ["cowboyCafe", "alienEats" ,"stellarCafe"]
 
-let randomValue = destinations[Math.floor(Math.random() * destinations.length)];
-console.log(randomValue);
+let transportationAlbuquerque = ["jakes", "yellowCab", "uber"]
+let transportationTaos = ["taosShuttle", "greyhound", "amtrak"];
+let transportationJemez = ["railRunner", "greyhound", "uber"];
+let transportationRoswell = ["newMexicoLuxuryBus", "greyhound", "amtrak"];
+
+let entertainmentAlbuquerque = ["indianCulturalCenter", "oldTown", "atomicMuseum"];
+let entertainmentTaos = ["puebloTour", "artGallery", "whiteWaterRafting"];
+let entertainmentJemez = ["puebloTour", "potteryDemo",  "nativeAmericanDanceExhibit"];
+let entertainmentRoswell = ["ufoMuseum", "carlsbadCavernsTour", "nmmiTour"];
 
 
-if(randomValue === "Albuquerque") {
-    console.log("Lunch at the Range Cafe!");
-}
-if(randomValue === "Taos") {
-    console.log("Lumch at Gutiz!");
-    
-}
-if(randomValue === "Jemez") {
-    console.log("Lunch at Daves Cafe!");
 
-}
-if(randomValue === "Roswell") {
-    console.log("Lunch at The Cowboy Cafe!");
-}
-if(randomValue === "Albuquerque") {
-    console.log("Transportation by Jake's Car Service.");
 
-}
-if(randomValue === "Taos") {
-    console.log("Transportation by Taos Shuttle.");
-
-}
-if(randomValue === "Jemez") {
-    console.log("Transportation by Rail Runner Train.");
-
-}
-if(randomValue === "Roswell") {
-    console.log("Transportation by  New Mexico Luxury Bus.");
-
-}
-prompt("Do you like these selections? Please reply yes or no.");
-
-let userInput = "yes";
-
-if(userInput = "yes") {
-    console.log("Thank you, you're trip is complete.");
-}
- if(userInput = "no") {
-    prompt("What part of the trip would you like to change?");
-
-}
+let city = destinations[Math.floor(Math.random() * destinations.length)];
+console.log(city);
 
