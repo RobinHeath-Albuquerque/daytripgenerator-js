@@ -11,7 +11,7 @@ let randomValue = destinations[Math.floor(Math.random() * destinations.length)];
 console.log(randomValue);
 
 
-if (randomValue === "Albuquerque") {
+if(randomValue === "Albuquerque") {
     console.log("Lunch at the Range Cafe!");
 }
 if(randomValue === "Taos") {
@@ -39,5 +39,17 @@ if(randomValue === "Jemez") {
 }
 if(randomValue === "Roswell") {
     console.log("Transportation by  New Mexico Luxury Bus.");
-    
+
 }
+prompt("Do you like these selections? Please reply yes or no.");
+
+let userInput = "yes";
+
+if(userInput = "yes") {
+    console.log("Thank you, you're trip is complete.");
+}
+ if(userInput = "no") {
+    prompt("What part of the trip would you like to change?");
+
+}
+
