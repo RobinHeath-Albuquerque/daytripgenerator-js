@@ -10,15 +10,34 @@ let Roswell = destinations [3];
 let randomValue = destinations[Math.floor(Math.random() * destinations.length)];
 console.log(randomValue);
 
-for(let index = 0; index < destinations.length; index ++) {
-    if (destinations[index] === "Albuquerque") {
-        console.log("Lunch at The Range Cafe!");
-    }
-    else if(destinations[index] === "Taos") {
-        console.log("Lunch at Gutiz!");
 
-    }
-    else if(destinations[index] === "Jemez") {
-        console.log("Lunch at Daves!");
+if (randomValue === "Albuquerque") {
+    console.log("Lunch at the Range Cafe!");
+}
+if(randomValue === "Taos") {
+    console.log("Lumch at Gutiz!");
+    
+}
+if(randomValue === "Jemez") {
+    console.log("Lunch at Daves Cafe!");
 
-    }
+}
+if(randomValue === "Roswell") {
+    console.log("Lunch at The Cowboy Cafe!");
+}
+if(randomValue === "Albuquerque") {
+    console.log("Transportation by Jake's Car Service.");
+
+}
+if(randomValue === "Taos") {
+    console.log("Transportation by Taos Shuttle.");
+
+}
+if(randomValue === "Jemez") {
+    console.log("Transportation by Rail Runner Train.");
+
+}
+if(randomValue === "Roswell") {
+    console.log("Transportation by  New Mexico Luxury Bus.");
+    
+}
