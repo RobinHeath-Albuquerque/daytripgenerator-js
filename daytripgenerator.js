@@ -1,5 +1,8 @@
 "use strict";
 
+prompt("Hello. Please type start to have your day trip planning begin. ");
+
+
 let destinations = ["Albuquerque", "Taos", "Jemez", "Roswell"];
 
 let restaurantsAlbuquerque = [" Range", " Savoy", " Gardunos"];
@@ -30,7 +33,8 @@ let abqTrip = restaurantsAlbuquerque[Math.floor(Math.random() * restaurantsAlbuq
  + entertainmentAlbuquerque[Math.floor(Math.random() * entertainmentAlbuquerque.length)];
 console.log(abqTrip);
 }
- 
+
+
 if(city === "Taos") {
     let taosTrip = restaurantsTaos[Math.floor(Math.random() * restaurantsTaos.length)]
      + transportationTaos[Math.floor(Math.random() * transportationTaos.length)] + 
@@ -54,14 +58,43 @@ if(city === "Roswell") {
 }
 prompt("Would you like to comfirm this trip? Please answer yes or no.");
 
-let userInput = "yes" || "no";
-if(userInput === "yes") {
+let userInput = ("yes", "no");
+
+if(userInput = "yes") {
     console.log("Thank you. Your trip is confirmed.");
 
-    }
+    }else(userInput === "no") 
+        prompt("Which part would you like to change? Please enter Destination, Transportation, Restaurant, Entertainment or All.");
 
-if(userInput === "no") {
-    prompt("Which part would you like to change?");
+let userOption = ("destination", "transportation", "restaurant", "entertainment", "all");
+
+
+if(userOption = "destination") {
+    prompt("Please select from the following. Albuquerque, Taos, Jemez or Roswell.");
 }
+let destination = ["Albuquerque", "Taos", "Jemez", "Roswell"];
+
+
+if(destination = "Albuquerque") {
+    let abqTrip = restaurantsAlbuquerque[Math.floor(Math.random() * restaurantsAlbuquerque.length)]
+    + transportationAlbuquerque[Math.floor(Math.random() * transportationAlbuquerque.length)]
+    +entertainmentAlbuquerque[Math.floor(Math.random() * entertainmentAlbuquerque.length)];
+    console.log("Albuquerque" + abqTrip);
+
+}
+function displayAlbuquerqueTrip(abqTrip) {
+    console.log("Your Albuquerque Trip is Complete.");
+}
+
+displayAlbuquerqueTrip();
+
+
+
+
+  
+
+
+
+
         
 
